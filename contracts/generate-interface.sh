@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
+DIR=/Users/mroon/Documents/projects/contracts/deployment/build
 
-web3j solidity generate ./Token.bin ./Token.abi -o ../src -p com.sweetbridge.web3j
+for file in /Users/mroon/Documents/projects/Web3jSample/contracts/*.bin
+do
+  filename=$(basename -- "$file")
+  name="${filename%%\.*}"
+  echo $name
+#  cmd [option] "$file" >> results.out
+done
